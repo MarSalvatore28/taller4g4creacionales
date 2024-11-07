@@ -11,5 +11,22 @@ public class main {
 
         // Llama al método operar en ConcreteCreator
         creator.operar();
+
+
+        //
+        Correo correo = new Correo();
+        Notificacion adaptadorCorreo = new CorreoAdaptador(correo);
+        adaptadorCorreo.mandarNotificacion("Este es un mensaje de prueba puedes poner cualquier cosa en el correo sabes bruh.");
+
+        // ejemplo de como usamos el reporte en un reporte en concreto de nuestra eleccion 
+
+        Reporte reporteBasico = new ConcreteReporte();
+
+        // Decorar el reporte con estilo adicional
+        Reporte reporteConEstilo = new ConcreteDecoratorA(reporteBasico);
+
+        // Escribir el reporte
+        reporteConEstilo.escribir();
+
     }
 }
