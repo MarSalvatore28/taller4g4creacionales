@@ -11,6 +11,8 @@ package com.mycompany.taller4grupo4;
 public class Taller4grupo4 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Correo correo = new Correo();
+        Notificacion adaptadorCorreo = new CorreoAdaptador(correo);
+        adaptadorCorreo.mandarNotificacion("Este es un mensaje de prueba.");
     }
 }
