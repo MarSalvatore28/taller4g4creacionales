@@ -8,11 +8,11 @@ public class ConcreteDecoratorA extends Decorator {
     @Override
     public void escribir() {
         super.escribir();
-        agregarEstilo();
+        decorate();
     }
 
-    private void agregarEstilo() {
-        System.out.println("Agregando estilo adicional al reporte.");
+    public void decorate() {
+        
     }
 
 }

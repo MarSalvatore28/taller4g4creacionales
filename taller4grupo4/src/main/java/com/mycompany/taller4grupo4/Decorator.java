@@ -11,5 +11,7 @@ public abstract class Decorator implements Reporte {
     public void escribir() {
         reporteDecorado.escribir();
     }
-
+    public void decorate() {
+        
+    }
 }
