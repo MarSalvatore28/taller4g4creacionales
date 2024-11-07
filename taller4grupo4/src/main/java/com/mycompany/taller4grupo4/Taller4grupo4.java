@@ -14,7 +14,7 @@ public class Taller4grupo4 {
 
         Correo correo = new Correo();
         Notificacion adaptadorCorreo = new CorreoAdaptador(correo);
-        adaptadorCorreo.mandarNotificacion("Este es un mensaje de prueba puedes poner cualquier cosa en el correo sabes bruh.");
+        adaptadorCorreo.mandarNotificacion("Este es un mensaje de prueba.");
 
 
         ConcreteCreator creator = ConcreteCreator.getInstance();
